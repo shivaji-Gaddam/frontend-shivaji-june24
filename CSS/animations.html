@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        div {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            animation-name: shivaji;
+            animation-duration: 20s; 
+            position: relative;
+            /* animation-delay: 3s; */
+            animation-iteration-count:infinite;
+            /* animation-direction: reverse; *N/
+            animation-direction: alternate-reverse;
+        }
+        #o{
+            background-color: blue;
+            animation-timing-function: linear;
+        }
+        #t{
+            background-color:red;
+            animation-timing-function: ease;
+        }
+        #th{
+            background-color:green;
+            animation-timing-function: ease-in;
+        }
+        #f{
+            background-color: orange;
+            animation-timing-function: ease-out;
+        }
+        #fi{
+            background-color: violet;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes shivaji {
+            
+
+            from{
+            left:400px;
+            }
+            to{
+            top: 400px;
+            }
+            /* 0% {
+                background-color: green; */
+                /* left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color:pink;
+                left: 400px;
+                top: 0px;
+                border-radius: 10px;
+
+            }
+
+            50% {
+                background-color: yellow;
+                left: 400px;
+                top: 400px;
+                border-radius: 25px;
+
+            }
+
+            75% {
+                background-color:blue;
+                left: 0px;
+                top: 400px;
+                border-radius: 50px;
+
+            }
+
+            100% {
+                background-color:violet;
+                left: 0px;
+                top: 0px;
+            } */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        Animations
+    </div> -->
+    <div>
+        <div id="o">one</div>
+        <div id="t">two</div>
+        <div id="th">three</div>
+        <div id="f">four</div>
+        <div id="fi">five</div>
+    </div>
+</body>
+
+</html>

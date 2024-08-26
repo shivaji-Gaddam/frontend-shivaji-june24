@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#hi{
+    border:10px solid red;
+
+}
+#hi1{
+    border:10px dotted rgb(11, 0, 0);
+    
+    
+}
+#hi2{
+    border:10px dashed rgb(17, 0, 255);
+    
+    
+}
+#hi3{
+    border:10px inset rgb(255, 0, 0);
+    
+    
+}
+#hi4{
+    border:10px outset rgb(0, 106, 255);
+    
+    
+}
+HI{
+    border:10px none rgb(55, 255, 0);
+    
+    
+}
