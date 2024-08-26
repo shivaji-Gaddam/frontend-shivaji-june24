@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="fname">
+        <label for="">password:</label>
+        <input type="password" name="password" id="pass" onkeyup="validation()">
+        <span id="u"></span>
+    </form>
+    <script>
+        function validation(){
+
+        var msg;
+        if(document.fname.password.value.length>6)
+        {
+            msg="strong"
+            document.getElementById("u").innerHTML=msg;
+
+        }
+        else{
+            msg="week"
+            document.getElementById("u").innerHTML=msg;
+        }
+        
+
+        }
+    </script>
+    
+</body>
+</html>

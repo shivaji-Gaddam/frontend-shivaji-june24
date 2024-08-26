@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form name="fname">
+    <label for="">username:</label>
+    <input type="text" name="username" id="uname" onkeyup="validation()">
+    <span id="u"></span>
+   </form>
+
+    <script> 
+        function validation(){
+             var x=document.fname.username.value;
+             var regex=/[a-z0-9_-]/;
+
+             if(x.match(regex)){
+                document.getElementById("u").innerHTML="valid"
+                var a=document.getElementById("uname")
+                a.style.backgroundColor="red"
+                a.style.color="white"
+                a.style.border="3px solid yellow"
+             }
+             else{
+                document.getElementById("u").innerHTML="not valid"
+                var a=document.getElementById("uname")
+                a.style.backgroundColor="green"
+                a.style.color="white"
+                a.style.border="3px solid  "
+             }
+
+
+
+
+        }
+    </script>
+</body>
+</html>

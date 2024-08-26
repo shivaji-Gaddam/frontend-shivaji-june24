@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventss</title>
+</head>
+<body>
+    <!-- <button type="button" onclick="alert('you clicked me')">Click Me</button> -->
+    <!-- <a href="#" onClick="alert('you clicked link')">Login</a> -->
+     <!-- <button type="button" id="demo" onclick="fun()">click me</button> -->
+      <!-- <button type="button" oncontextmenu="fun()">clickme</button> -->
+
+      <!-- <p id="para" onmouseover="overme()" onmouseout="outme()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nisi.</p> -->
+
+      enter username:<input type="text" onkeydown="alert('you entered input...!!')"/> <br>
+      
+      enter password:<input type="pass" onkeyup="alert('you removed input...!!')"/>
+
+      <h1 onload="">WELCOME TO SHIVAJI'S KINGDOM</h1>
+     <script>
+        // function fun()
+        // {
+        //     alert("You clicked me.....!!!")
+        // }
+        // document.getElementById("demo").onclick=fun;
+
+        function overme()
+        {
+            var pp=document.getElementById("para")
+            // console.log("pp")
+            pp.style.color="white";
+            pp.style.backgroundColor="green";
+            pp.style.border="2px solid red"
+        }
+        function outme()
+        {
+            var pp=document.getElementById("para")   
+            pp.style.color="white";
+            pp.style.backgroundColor="yellow";
+            pp.style.border="2px solid blue"
+        }
+        
+
+     </script>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTIONS</title>
+</head>
+
+<body>
+    <h1>WELCOME TO FUNCTIONS</h1>
+    <h4>function is a location where we can write our logic to perform some action or collection of statements</h4>
+    <script>
+
+       // 1)NORMAL FUNCTION WITHOUT PARAMETERS//
+        function demo() {
+            document.write("normal function" + "<br>");
+        }
+        demo()
+        //NORMAL FUNCTION WITH PARAMETERS//
+        function add(a, b) {
+            document.write("the sum is :" + (a + b) + "<br>");
+
+        }
+        add(2, 5)
+        add(10, 30)
+        add(100, 100)
+        //NORMAL FUNCTION WITH RETURN STATEMENT//
+        function helo() {
+            return "shivaji";
+        }
+        document.write("the name is:" + helo() + "<br>")
+
+        // 2)FUNCTION EXPRESSION //
+
+        let substraction = function sub(a, b) {
+            document.write("substraction is:" + (a - b) + "<br>")
+        }
+        substraction(59, 4)
+        //3)ANONYMUS FUNCTION//
+        let full = function (firstname, lastname) {
+            let fullname = firstname + lastname;
+            document.write("my full name is:" + fullname + "<br>");
+        }
+        full("shivaji", "maharaj");
+
+        //4)ARROW FUNCTION//
+        let demo = (name)=>
+        {
+            document.write("hello world!"+name);
+        }
+        demo("lucky");
+        //5)IIFE(IMMEDIATE INVOKE FUNCTION EXPRESSION)//
+        (
+            function hello()
+            {
+                document.write("hello world");
+            }
+
+        )();
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

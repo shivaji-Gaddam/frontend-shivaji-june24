@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timers</title>
+</head>
+<body>
+    <!-- <button id="btn" type="button" onclick="setTimeout(fun,8000)">click</button> -->
+     <p>welcome to india:<span id="demo"></span></p>
+     <button type="button" onclick="stopClock()">stop</button>
+    <script>
+        // function fun()
+        // {
+        //     alert("i am sleeping...")
+        // }
+        // var btn=document.getElementById("btn")
+        var clearId;
+
+        function showtime()
+        {
+            let d= new Date(); //12:41:23 built in function//
+            document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+        }
+        function stopClock()
+        {
+            clearInterval(clearId)
+        }
+        clearId=setInterval(showtime,1000);
+
+    </script>
+</body>
+</html>

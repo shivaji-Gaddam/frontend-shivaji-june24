@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomManipulation</title>
+</head>
+<body>
+    <div id="one">
+        <p>I am paragraph one </p>
+        <p id="last">Welcome to dom DomManipulation</p>
+        <img src="me.png.jpg" alt="" height="200px" width="200px" id="img">
+    </div>
+    <script>
+       var newElement=document.createElement("h4")
+       console.log(newElement)
+       newElement.innerText="I am the head of this page"
+       var  currdiv=document.getElementById("one")
+    //    currdiv.appendChild(newElement)
+    var lastEle=document.getElementById("last")
+    // currdiv.insertBefore(newElement,lastEle)
+    lastEle.replaceChildren(newElement)
+
+
+    // console.log(currdiv.getAttribute("id"))
+    var img=document.getElementById("img")
+    // console.log(img.getAttribute("src"))
+    img.setAttribute("src","me2.jpg")
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
